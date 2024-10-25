@@ -73,7 +73,8 @@ Before visiting the prefect UI dashboard. Lets configure our workflows
 
 ## Deployment
 
-Open a new terminal in VS code. And execute prefect init, choose your recipe and enter. In this example we're using the local option, 
+Open a new terminal and execute `prefect init`. Choose your recipe and click enter. In this example we're using the local storage 
+
 ![init](https://github.com/CristopherLodbrok117/python-scripting-with-prefect/blob/e2f40f1ff3c0847e431d4d0ff94c2500ae61829b/screenshots/03%20-%20init.png)
 
 A yaml file is created automatically. Since we are using the default settings there's no need to modify the file . For more recipe or yaml configuration options visit [prefect deployments](https://docs.prefect.io/3.0/deploy/infrastructure-concepts/prefect-yaml#define-deployments-with-yaml)
@@ -91,12 +92,12 @@ To continue the condiguration
 
 <br>
 
-Select the work pool. If no list deploys, prefect will ask you to configure one quickly by asking a few questions like before. After choosing the work pool the next message is deployed with some interesting commands to execute and a link to the UI prefect deployment
+Select the work pool. If prefect doesn't shows a list like below, it will ask you to configure one quickly by asking a few questions like before. After choosing the work pool the next message is deployed, with some interesting commands to execute and a link to the UI prefect deployment
 
 ![deployment condigured](https://github.com/CristopherLodbrok117/python-scripting-with-prefect/blob/e2f40f1ff3c0847e431d4d0ff94c2500ae61829b/screenshots/05%20-%20pool.png)
 
 
-You can also create a work pool manually before the deployment configuration following this instructions [prefect-work-pool](https://docs.prefect.io/3.0/deploy/infrastructure-concepts/work-pools#configure-dynamic-infrastructure-with-work-pools)
+You can also create a work pool manually before the deployment configuration following these instructions [prefect-work-pool](https://docs.prefect.io/3.0/deploy/infrastructure-concepts/work-pools#configure-dynamic-infrastructure-with-work-pools)
 
 
 * `windows_service_spring.jar`
