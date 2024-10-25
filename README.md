@@ -49,6 +49,8 @@ if __name__ == '__main__':
 
 Flows are uniquely identified by name. You can provide a name parameter value for the flow, but if you don’t provide a name, Prefect uses the flow function name.
 
+<br>
+
 ## Install Prefect
 
 It's recommended to create a python virtual environment first and activate it. We can do it by executing the next lines (with Git Bash)
@@ -63,9 +65,38 @@ Now we can install prefect with: `pip install -U prefect`
 
 Excecute `prefect server start` to connect to prefect
 
-Vefore visiting the prefect UI dashboard. Lets configure our workflows
+![prefect server](https://github.com/CristopherLodbrok117/python-scripting-with-prefect/blob/e2f40f1ff3c0847e431d4d0ff94c2500ae61829b/screenshots/999%20-%20prefect%20server.png)
+
+Before visiting the prefect UI dashboard. Lets configure our workflows
+
+<br>
 
 ## Deployment
+
+Open a new terminal in VS code. And execute prefect init, choose your recipe and enter. In this example we're using the local option, 
+![init](https://github.com/CristopherLodbrok117/python-scripting-with-prefect/blob/e2f40f1ff3c0847e431d4d0ff94c2500ae61829b/screenshots/03%20-%20init.png)
+
+A yaml file is created automatically. Since we are using the default settings there's no need to modify the file . For more recipe or yaml configuration options visit [prefect deployments](https://docs.prefect.io/3.0/deploy/infrastructure-concepts/prefect-yaml#define-deployments-with-yaml)
+
+<br>
+
+To continue the condiguration
+1. Execute the line `prefect deploy ` in the terminal.
+2. Select the flow to deploy
+3. Set a schedule for our flow run (in seconds)
+4. Activate the deployment schedule (if you don't want to activate it immediately you can do it manually in the prefect dashboard later)
+
+![deploy](https://github.com/CristopherLodbrok117/python-scripting-with-prefect/blob/e2f40f1ff3c0847e431d4d0ff94c2500ae61829b/screenshots/04%20-%20prefect%20deploy.png)
+
+
+<br>
+
+Select the work pool. If no list deploys, prefect will ask you to configure one quickly by asking a few questions like before. After choosing the work pool the next message is deployed with some interesting commands to execute and a link to the UI prefect deployment
+
+![deployment condigured](https://github.com/CristopherLodbrok117/python-scripting-with-prefect/blob/e2f40f1ff3c0847e431d4d0ff94c2500ae61829b/screenshots/05%20-%20pool.png)
+
+
+You can also create a work pool manually before the deployment configuration following this instructions [prefect-work-pool](https://docs.prefect.io/3.0/deploy/infrastructure-concepts/work-pools#configure-dynamic-infrastructure-with-work-pools)
 
 
 * `windows_service_spring.jar`
